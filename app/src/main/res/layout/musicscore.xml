@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical|horizontal" >
+ 
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="vertical" >
+
+		<GridView
+		    android:id="@+id/GridView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:numColumns="auto_fit"
+		    android:scrollbars="vertical|horizontal" >
+		
+		</GridView>
+    
+	 </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+         <ProgressBar
+             android:id="@+id/pb"
+             style="?android:attr/progressBarStyleHorizontal"
+             android:layout_width="match_parent"
+             android:layout_height="5dp" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+
+             <ImageButton
+                 android:id="@+id/imageButtonPlay"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.95"
+                 android:src="@drawable/play" />
+
+             <ImageButton
+                 android:id="@+id/imageButtonPause"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.95"
+                 android:src="@drawable/pause" />
+
+             <ImageButton
+                 android:id="@+id/imageButtonStop"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.95"
+                 android:src="@drawable/stop" />
+
+             <ImageButton
+                 android:id="@+id/ImageButtonStereo"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.95"
+                 android:src="@drawable/stereo" />
+
+             <ImageButton
+                 android:id="@+id/imageButtonVolume"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.95"
+                 android:src="@drawable/volume" />
+         </LinearLayout>
+
+     </LinearLayout>
+	  	
+</LinearLayout>

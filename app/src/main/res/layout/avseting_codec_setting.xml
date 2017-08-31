@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView_resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/resolution"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_resolution"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/textView_resolution" >
+
+        <RadioButton
+            android:id="@+id/radio_qvga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:text="@string/RadioButton_qvga" />
+
+        <RadioButton
+            android:id="@+id/radio_cif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/RadioButton_cif" />
+
+        <RadioButton
+            android:id="@+id/radio_vga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButton_vga" />
+
+        <RadioButton
+            android:id="@+id/radio_720p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButton_720p" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_bitrate"
+        android:layout_below="@+id/editText_bitrate"
+        android:layout_marginTop="32dp"
+        android:text="@string/fps"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_bitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_resolution"
+        android:layout_below="@+id/radioGroup_resolution"
+        android:layout_marginTop="28dp"
+        android:text="@string/bitrate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_bitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_bitrate"
+        android:layout_alignBottom="@+id/textView_bitrate"
+        android:layout_alignLeft="@+id/radioGroup_resolution"
+        android:layout_alignRight="@+id/radioGroup_resolution"
+        android:ems="10"
+        android:inputType="number" />
+   		<requestFocus />
+   		
+    <EditText
+        android:id="@+id/editText_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fps"
+        android:layout_alignBottom="@+id/textView_fps"
+        android:layout_alignLeft="@+id/editText_bitrate"
+        android:layout_alignRight="@+id/editText_bitrate"
+        android:ems="10"
+        android:inputType="number" >
+
+     
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBox_hardcoding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText_fps"
+        android:layout_below="@+id/editText_fps"
+        android:layout_marginTop="29dp"
+        android:text="@string/hardcode" />
+
+    <CheckBox
+        android:id="@+id/checkBox_imgcuting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_hardcoding"
+        android:layout_below="@+id/checkBox_hardcoding"
+        android:text="@string/imgcut" />
+
+    <CheckBox
+        android:id="@+id/CheckBox_AdaptiveRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_hardcoding"
+        android:layout_below="@+id/checkBox_hardcoding"
+        android:layout_marginTop="32dp"
+        android:text="Adaptive resolution" />
+
+</RelativeLayout>

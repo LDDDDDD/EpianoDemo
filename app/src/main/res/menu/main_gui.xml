@@ -1,0 +1,91 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item
+        android:id="@+id/codecinfo_settings"
+        android:title="@string/codec_setting"/>  
+   
+ 	<item
+        android:id="@+id/networkinfo_settings"
+        android:title="@string/network_setting"/>          
+             
+     
+ <!--      
+     
+     <item
+        android:id="@+id/res_settings"
+        android:title="@string/resolution"/>   
+        
+	<item
+        android:id="@+id/fps_settings"
+        android:title="@string/fps"/>  
+         
+	<item
+        android:id="@+id/bitrate_settings"
+        android:title="@string/bitrate"/>    
+        
+	
+	
+	<item
+        android:id="@+id/action_start_self"
+        android:title="@string/action_start_self"/>  	
+			
+    <item
+        android:id="@+id/action_start"
+        android:title="@string/action_start"/>    
+    
+    <item
+        android:id="@+id/action_stop"
+        android:title="@string/action_stop"/>   
+         
+         
+	<item
+        android:id="@+id/destip_settings"
+        android:title="@string/remoteip"/>    
+    
+	<item
+        android:id="@+id/serverip_settings"
+        android:title="@string/serverip"/>          
+         
+-->
+ 
+        
+	<item
+        android:id="@+id/action_swichcam"
+        android:title="@string/action_swichcam"/>  	
+
+	<item
+        android:id="@+id/action_start_audio"
+        android:title="@string/action_start_audio"/>  	
+	
+	<item
+        android:id="@+id/action_mute_audio"
+        android:title="@string/action_mute_audio"/>  	
+	
+	<item
+        android:id="@+id/action_unmute_audio"
+        android:title="@string/action_unmute_audio"/>  	
+	
+				
+			
+    <item
+        android:id="@+id/action_start_video"
+        android:title="@string/action_start_video"/>    
+        
+	<item
+        android:id="@+id/action_start_av"
+        android:title="@string/action_start_av"/>   
+    
+    <item
+        android:id="@+id/action_start_file"
+        android:title="@string/action_start_file"/>  
+
+
+    <item
+        android:id="@+id/action_version"
+        android:title="@string/action_version"/>  
+
+
+
+
+
+</menu>

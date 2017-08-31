@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:scrollbars="vertical|horizontal"
+    tools:context=".av.ictvoip.androidvideo.capture.AudioVideo" >
+ 
+    <LinearLayout
+		android:id="@+id/ll_left"
+		android:layout_width="400dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:scrollbars="vertical|horizontal" >
+         
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		
+			<GridView
+				android:id="@+id/GridView1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:numColumns="auto_fit"
+				android:scrollbars="vertical|horizontal" >			
+			</GridView>		  
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<ProgressBar
+				android:id="@+id/pb"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="match_parent"
+				android:layout_height="5dp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+			
+				<ImageButton
+					android:id="@+id/imageButtonPlay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.95"
+					android:src="@drawable/play" />
+				
+				<ImageButton
+					android:id="@+id/imageButtonPause"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.95"
+					android:src="@drawable/pause" />
+				
+				<ImageButton
+					android:id="@+id/imageButtonStop"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.95"
+					android:src="@drawable/stop" />
+				
+				<ImageButton
+					android:id="@+id/ImageButtonStereo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.95"
+					android:src="@drawable/stereo" />
+				
+				<ImageButton
+					android:id="@+id/imageButtonVolume"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.95"
+					android:src="@drawable/volume" />
+			</LinearLayout>
+				
+		</LinearLayout>
+
+	</LinearLayout>
+     
+	<LinearLayout
+		android:id="@+id/ll_right"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >    
+        
+		<LinearLayout
+			android:id="@+id/LinearLayout3D"         	
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:orientation="horizontal" >
+         
+	        <!-- <GL2JNIView
+	        <SurfaceView 
+	        <android.opengl.GLSurfaceView
+	            android:id="@+id/video_Image_peer"
+	            android:layout_width="match_parent"
+	            android:layout_height="400dp"
+	            android:background="#3FD700"
+	            android:visibility="visible" />-->
+	    </LinearLayout>
+	    
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+         
+			<ImageView
+				android:id="@+id/video_Image_peer2"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#FFD700"
+				android:visibility="visible" />
+	    </LinearLayout>
+	    
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<LinearLayout
+				android:id="@+id/llvideo_capture_surface_nativecam"         	
+				android:layout_width="1dp"
+				android:layout_height="75dp"
+				android:layout_marginBottom="0dp"
+				android:layout_marginRight="0dp"
+				android:orientation="horizontal" >
+				
+			    <SurfaceView
+				android:id="@+id/video_capture_surface_nativecam"
+				android:visibility="visible" 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				/>
+			</LinearLayout>		    
+		    			
+			<LinearLayout
+				android:id="@+id/video_capture_surface_2usbcam"         	
+				android:layout_width="1dp"
+				android:layout_height="75dp"
+				android:layout_marginBottom="0dp"
+				android:layout_marginRight="0dp"
+				android:orientation="horizontal" >
+			</LinearLayout>
+			
+	        
+			<ImageView
+				android:id="@+id/video_capture_surface_usbcam"
+				android:layout_width="1dp"
+				android:layout_height="1dp"
+				android:layout_marginBottom="0dp"
+				android:layout_marginRight="0dp"
+				android:background="#3FD700" />
+	        
+			<ImageView
+				android:id="@+id/video_Image_local2"
+				android:layout_width="1dp"
+				android:layout_height="1dp"
+				android:layout_marginBottom="0dp"
+				android:layout_marginRight="0dp"
+				android:background="#3FD700" />
+			
+			<HorizontalScrollView
+			    android:id="@+id/horizontalScrollViewStat"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" >
+
+			    <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			        
+			        <ImageView
+				        android:id="@+id/statview"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginBottom="0dp"
+				        android:layout_marginRight="0dp" />
+			    </LinearLayout>
+			   
+
+			</HorizontalScrollView>
+  
+	    </LinearLayout>
+
+        
+        <!-- 	    
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <ProgressBar
+		        android:id="@+id/progressBar_fileSend"
+		        style="?android:attr/progressBarStyleHorizontal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/btn_setting"
+		        android:layout_alignParentTop="true"
+		        android:layout_alignRight="@+id/progressBar_fileRecv" />
+		
+		    <TextView
+		        android:id="@+id/textView_fileSend"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_alignRight="@+id/textView_fileRecv"
+		        android:text="" />
+		
+		    <TextView
+		        android:id="@+id/textView_fileRecv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/progressBar_fileRecv"
+		        android:layout_alignParentLeft="true"
+		        android:layout_toLeftOf="@+id/btn_setting"
+		        android:text="" />
+		
+		    <ProgressBar
+		        android:id="@+id/progressBar_fileRecv"
+		        style="?android:attr/progressBarStyleHorizontal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/btn_setting"
+		        android:layout_alignRight="@+id/video_capture_surface"
+		        android:layout_below="@+id/textView_fileSend" />
+	    </LinearLayout> -->
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical" >
+
+			<CheckBox
+			    android:id="@+id/checkBoxAudio"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="A" 
+			    android:layout_marginRight="0dp" />
+
+			<CheckBox
+			    android:id="@+id/checkBoxVideo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="V"
+			    android:layout_marginRight="0dp"  />
+			
+			<CheckBox
+			    android:id="@+id/checkBoxNetAuto"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="AT"
+			    android:layout_marginRight="5dp"  />
+			
+		    <SeekBar
+		        android:id="@+id/seekBarBR"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content" />
+<!-- 
+		    <EditText
+		        android:id="@+id/editTextStat"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:inputType="textMultiLine" > 
+
+		        <requestFocus />
+		    </EditText>-->
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+			android:gravity="center|center_horizontal|center_vertical">
+
+		    <EditText
+		        android:id="@+id/EditTextIP"
+		        android:layout_width="150dp"
+		        android:layout_height="25dp"
+		        android:layout_gravity="center|center_horizontal|center_vertical"
+		        />
+		</LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+			android:gravity="center|center_horizontal|center_vertical">
+	        
+	        <Button
+		        android:id="@+id/btn_start"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/btn_start" />
+		
+		    <Button
+		        android:id="@+id/btn_stop"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/btn_stop" />
+
+		    <Button
+		        android:id="@+id/btn_choosecam"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/btn_choosecam" />
+		    		
+		    <Button
+		        android:id="@+id/btn_setting"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/btn_setting" />
+
+		    
+	     </LinearLayout>
+        
+    </LinearLayout>
+	  	
+</LinearLayout>

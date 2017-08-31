@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical|horizontal">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        
+	    <Button
+	        android:id="@+id/buttonKey2"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="Grid Open" />
+	
+	    <Button
+	        android:id="@+id/ButtonBook3D"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="3D Book Open" />
+	    
+	 </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+    
+	    <Button
+	        android:id="@+id/ButtonBook3DGl2"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="3D Book Open(GL2)" />
+	
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="Book Open" />
+	</LinearLayout>
+
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+	    
+	    <Button
+	        android:id="@+id/buttonAD"
+	        android:layout_width="0dp"
+       	 	android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="AudioMaker" />
+	
+	    <Button
+	        android:id="@+id/buttonBTTest"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="Blue Tooth Test" />
+	</LinearLayout>
+	
+	<LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/buttonBTTestCom"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="Bluetooth Test" />
+	
+	    <Button
+	        android:id="@+id/buttonBTTestCom2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:text="Bluetooth Test2" />
+
+	</LinearLayout>
+	
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+	    
+	    <Button
+	        android:id="@+id/buttonAVideo"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="Audio + Video" />
+	    
+	    <Button
+	        android:id="@+id/buttonCameraTest"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="Camera Test" />
+	</LinearLayout>
+	
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+	    <Button
+	        android:id="@+id/buttonUVCWebCam"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="UVCWebCam" />
+	
+	    <Button
+	        android:id="@+id/buttoneLearning"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="eLearning" />
+    
+	</LinearLayout>
+	    
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		<Button
+	        android:id="@+id/buttonaudiorecord"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:text="testaudiorecord" />    
+	 </LinearLayout>
+	    
+</LinearLayout>

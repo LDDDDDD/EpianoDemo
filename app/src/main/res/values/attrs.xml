@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MClearEditText">
+        <!--是否展示底部线 : 默认显示 -->
+        <attr name="mClearEditText_showBottomLine" format="boolean"/>
+        <!--底部线的颜色-->
+        <attr name="mClearEditText_bottomLineColor" format="color"/>
+        <!--底部线的宽度-->
+        <attr name="mClearEditText_bottomLineWidth" format="dimension"/>
+        <!-- 左边图片的大小 -->
+        <attr name="mClearEditText_leftDrawableSize" format="dimension"/>
+        <!-- 是否显示右边删除按钮 :默认显示-->
+        <attr name="mClearEditText_disableClear" format="boolean"/>
+        <!-- 右边图片的大小 -->
+        <attr name="mClearEditText_rightDrawableSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="LSettingView">
+        <attr name="leftText" format="string"/>
+        <attr name="leftIcon" format="integer"/>
+        <attr name="rightIcon" format="integer"/>
+        <attr name="textSize" format="float"/>
+        <attr name="textColor" format="color"/>
+        <attr name="isShowUnderLine" format="boolean"/>
+        <attr name="leftIconSize" format="dimension"/>
+        <attr name="leftTextMarginLeft" format="dimension"/>
+        <attr name="rightStyle" format="enum">
+            <enum name="iconShow" value="0"/>
+            <enum name="iconHide" value="1"/>
+            <enum name="iconCheck" value="2"/>
+            <enum name="iconSwitch" value="3"/>
+        </attr>
+        <attr name="isShowRightText" format="boolean"/>
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AvatarImageBehavior">
+        <attr name="finalSize" format="dimension"/>
+        <attr name="finalX" format="dimension"/>
+        <attr name="toolBarHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

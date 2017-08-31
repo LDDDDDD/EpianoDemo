@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.epiano.commutil"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission  android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:logo="@mipmap/logo"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mydomain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.epiano.MainActivity"
+            android:theme="@style/BaseAppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- wg add -->
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+
+         <!--<activity -->
+             <!--android:name="com.epiano.slidepage.SlidePages" -->
+             <!--android:configChanges="keyboardHidden|orientation|screenSize"> -->
+         <!--</activity> -->
+
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".MusicScore"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".PianoELearning"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".MusicScoreBook"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".MusicScoreBook3D"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".MusicScoreBook3DGL2"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".AudioMaker"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".BlueToothTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".BlueToothTestCom"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name=".BTClient"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".BTClient2"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".UvcWebCamApp"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".BTDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="选取连接设备"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="com.epiano.av.ictvoip.androidvideo.capture.MainGUI"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.epiano.av.ictvoip.androidvideo.capture.Camera2Test"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".TestAudioRecord"
+            android:label="@string/app_name">
+        </activity>
+
+        <service android:name=".epdeamon"></service>
+
+
+    </application>
+
+</manifest>

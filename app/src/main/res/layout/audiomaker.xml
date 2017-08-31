@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#ff0000cc"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textSize="12sp"
+                android:width="60dp" />
+
+            <Button
+                android:id="@+id/buttonKey"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="识别"
+                android:textSize="12sp"
+                android:width="60dp" />
+
+            <Button
+                android:id="@+id/buttonKey2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="L识别"
+                android:textSize="12sp"
+                android:width="60dp" />
+
+            <Button
+                android:id="@+id/buttonMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File"
+                android:textSize="12sp"
+                android:width="60dp" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarAudioFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/otherfunctionll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/tvSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="11025" >
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textSize="12sp"
+            android:width="60dp" >
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!--
+	    <LinearLayout
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    >
+	    	<TextView
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="采样缓冲大小:"
+	    	></TextView>
+	    	<TextView
+	    		android:id="@+id/minBuf"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:minWidth="50dip"
+	    	></TextView>
+	    	<TextView
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="最高频率:"
+	    		android:minWidth="100dip"
+	    	></TextView>
+	    	<TextView
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="最低频率:"
+	    		android:minWidth="100dip"
+	    	></TextView>
+	    </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <SurfaceView
+                android:id="@+id/SurfaceView01"
+                android:layout_width="fill_parent"
+                android:layout_height="409dp" />
+
+            <SurfaceView
+                android:id="@+id/SurfaceView02"
+                android:layout_width="fill_parent"
+                android:layout_height="94dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

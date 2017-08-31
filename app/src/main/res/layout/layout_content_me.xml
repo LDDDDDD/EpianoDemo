@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.epiano.view.LSettingItem
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:isShowRightText="true"
+        leon:leftIcon="@drawable/message"
+        leon:leftIconSize="36dp"
+        leon:leftText="我的消息"
+        leon:leftTextMarginLeft="30dp"
+        leon:rightText="99+"
+        leon:rightTextColor="@color/ml_gray"
+        leon:rightTextSize="14sp"/>
+
+    <com.epiano.view.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:isShowRightText="true"
+        leon:leftIcon="@drawable/download"
+        leon:leftText="我的下载"
+        leon:rightText="V1.0.0"
+        leon:rightTextColor="@color/colorPrimary"
+        leon:textSize="20"/>
+
+    <com.epiano.view.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@drawable/credit_card"
+        leon:leftText="我的卡片"
+        leon:rightStyle="iconHide"/>
+
+    <com.epiano.view.LSettingItem
+        android:id="@+id/item_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        leon:leftIcon="@drawable/ic_action_action_add_shopping_cart"
+        leon:leftText="我的购物车"
+        leon:rightStyle="iconCheck"/>
+
+    <com.epiano.view.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        leon:isShowUnderLine="false"
+        leon:leftIcon="@drawable/ic_action_communication_location_on"
+        leon:leftText="我的位置"
+        leon:rightStyle="iconSwitch"/>
+
+    <!--<com.epiano.view.LSettingItem-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--leon:isShowUnderLine="false"-->
+        <!--leon:leftText="不显示分割线"-->
+        <!--leon:rightStyle="iconSwitch"/>-->
+
+</LinearLayout>

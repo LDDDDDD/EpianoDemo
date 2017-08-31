@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView_serversetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/server_setting"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_serverip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_serversetting"
+        android:layout_below="@+id/textView_serversetting"
+        android:layout_marginTop="16dp"
+        android:text="@string/serveip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_serverip"
+        android:layout_below="@+id/textView_serverip"
+        android:layout_marginTop="16dp"
+        android:text="@string/serveport"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_remotesetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_serversetting"
+        android:layout_below="@+id/textView_port"
+        android:layout_marginTop="21dp"
+        android:text="@string/remote_setting"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_remoteip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_port"
+        android:layout_below="@+id/textView_remotesetting"
+        android:layout_marginTop="16dp"
+        android:text="@string/remoteip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_remoteport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_remoteip"
+        android:layout_below="@+id/textView_remoteip"
+        android:layout_marginTop="15dp"
+        android:text="@string/remoteport"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_remotename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_remoteport"
+        android:layout_below="@+id/textView_remoteport"
+        android:layout_marginTop="15dp"
+        android:text="@string/remotename"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_localsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_remotesetting"
+        android:layout_below="@+id/textView_remotename"
+        android:layout_marginTop="22dp"
+        android:text="@string/local_setting"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_localip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_remotename"
+        android:layout_below="@+id/textView_localsetting"
+        android:layout_marginTop="18dp"
+        android:text="@string/localip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_localport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_localip"
+        android:layout_below="@+id/textView_localip"
+        android:layout_marginTop="14dp"
+        android:text="@string/localport"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_localname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_localport"
+        android:layout_below="@+id/textView_localport"
+        android:layout_marginTop="14dp"
+        android:text="@string/localname"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editText_serverip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_serverip"
+        android:layout_alignBottom="@+id/textView_serverip"
+        android:layout_toRightOf="@+id/textView_serverip"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_serverport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_port"
+        android:layout_alignBottom="@+id/textView_port"
+        android:layout_alignLeft="@+id/editText_serverip"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_remoteip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_remoteip"
+        android:layout_alignBottom="@+id/textView_remoteip"
+        android:layout_alignLeft="@+id/editText_serverport"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_remoteport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_remoteport"
+        android:layout_alignBottom="@+id/textView_remoteport"
+        android:layout_alignLeft="@+id/editText_remoteip"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_remotename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_remotename"
+        android:layout_alignBottom="@+id/textView_remotename"
+        android:layout_alignLeft="@+id/editText_remoteport"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_localip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_localip"
+        android:layout_alignBottom="@+id/textView_localip"
+        android:layout_alignLeft="@+id/editText_remotename"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_localport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_localport"
+        android:layout_alignBottom="@+id/textView_localport"
+        android:layout_alignLeft="@+id/editText_localip"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_localname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_localname"
+        android:layout_alignBottom="@+id/textView_localname"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView_localname"
+        android:ems="10" />
+
+</RelativeLayout>

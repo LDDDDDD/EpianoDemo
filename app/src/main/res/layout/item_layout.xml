@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    >
+   
+    
+     <LinearLayout 
+	       android:orientation="horizontal"
+	       android:layout_width="match_parent"
+	       android:layout_height="0dp"
+	       android:layout_weight="1"
+	       >
+         
+		   <LinearLayout 
+		       android:orientation="vertical"
+		       android:layout_width="0dp"
+		       android:layout_height="match_parent"
+		       android:layout_weight="1"
+		       >
+		
+		      <ImageView 
+		          android:id="@+id/item_layout_leftImage"
+		          android:layout_width="match_parent"
+		          android:layout_height="0dp"
+		          android:layout_weight="1"
+		          android:scaleType="fitXY"
+		          />
+		      <TextView 
+		          android:id="@+id/item_layout_leftText"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:textSize="25sp"
+		          android:textColor="@android:color/darker_gray"
+		          android:padding="8dp"
+		          />  
+		   </LinearLayout>
+		
+		   <LinearLayout 
+		       android:orientation="vertical"
+		       android:layout_width="0dp"
+		       android:layout_height="match_parent"
+		       android:layout_weight="1"
+		       >
+		      <ImageView 
+		          android:id="@+id/item_layout_rightImage"
+		          android:layout_width="match_parent"
+		          android:layout_height="0dp"
+		          android:layout_weight="1"
+		          android:scaleType="fitXY"
+		          />
+		       <TextView 
+		          android:id="@+id/item_layout_rightText"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:textSize="25sp"
+		          android:textColor="@android:color/darker_gray"
+		          android:padding="8dp"
+		          /> 
+	
+	   		</LinearLayout>
+	   
+	</LinearLayout>
+	
+   
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+		   <ImageButton
+		           android:id="@+id/imageButtonPlay"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_weight="0.95"
+		           android:src="@drawable/play" />
+
+		   <ImageButton
+		       android:id="@+id/imageButtonPause"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="0.95"
+		       android:src="@drawable/pause" />
+
+		   <ImageButton
+		       android:id="@+id/imageButtonStop"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="0.95"
+		       android:src="@drawable/stop" />
+
+		   <ImageButton
+		       android:id="@+id/imageButtonVolume"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="0.95"
+		       android:src="@drawable/volume" />
+
+	 </LinearLayout>    
+  
+
+</LinearLayout>

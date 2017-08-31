@@ -1,0 +1,57 @@
+package com.epiano.slidepage;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.FrameLayout.LayoutParams;
+import android.widget.ListView;
+import android.widget.TextView;
+
+
+public class FoundFragment extends Fragment {
+
+	private ListView listView;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+							 Bundle savedInstanceState) {
+
+		{
+			LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+			FrameLayout fl = new FrameLayout(getActivity());
+			fl.setLayoutParams(params);
+			DisplayMetrics dm = getResources().getDisplayMetrics();
+			final int margin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, dm);
+
+			params.setMargins(margin, margin, margin, margin);
+
+			TextView v = new TextView(getActivity());
+			v.setLayoutParams(params);
+			v.setLayoutParams(params);
+			v.setGravity(Gravity.CENTER);
+			v.setText("发现界面");
+			v.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, dm));
+
+			fl.addView(v);
+
+			return fl;
+		}
+
+//		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+//		FrameLayout fl = new FrameLayout(getActivity());
+//		fl.setLayoutParams(params);
+//
+////		View view= inflater.inflate(R.layout.lessionlistview , container, false);
+////        listView = (ListView)view.findViewById(R.id.lessionlistview);
+//        List<Map<String, Object>> list=getData();
+//        listView.setAdapter(new ListViewAdapter(getActivity(), list));
+
+		//return fl;
+	}
+}

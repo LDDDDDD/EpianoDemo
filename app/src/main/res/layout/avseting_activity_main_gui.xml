@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".av.ictvoip.androidvideo.capture.MainGUI" >
+
+    <GL2JNIView
+        android:id="@+id/video_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="visible" />
+
+    <SurfaceView
+        android:id="@+id/video_capture_surface"
+       	android:layout_width="80dp"
+	    android:layout_height="100dp"    
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp" >
+    </SurfaceView>
+    
+    
+    <Button
+        android:id="@+id/btn_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_start" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_start"
+        android:text="@string/btn_stop" />
+
+    <Button
+        android:id="@+id/btn_setting"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_stop"
+        android:text="@string/btn_setting" />
+
+        
+    <Button
+        android:id="@+id/btn_choosecam"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_setting"
+        android:text="@string/btn_choosecam" />
+<!--  
+    
+    <TextView
+        android:id="@+id/textView_capFps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView_displayFps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_capFps"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView_sendBitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_displayFps"
+        android:textSize="14sp"  />
+
+    <TextView
+        android:id="@+id/textView_recvBitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_sendBitrate"
+        android:textSize="14sp" />
+-->
+
+    <!-- <ProgressBar
+        android:id="@+id/progressBar_fileSend"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_setting"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/progressBar_fileRecv" />
+
+    <TextView
+        android:id="@+id/textView_fileSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView_fileRecv"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_fileRecv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar_fileRecv"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btn_setting"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_fileRecv"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_setting"
+        android:layout_alignRight="@+id/video_capture_surface"
+        android:layout_below="@+id/textView_fileSend" /> -->
+    
+</RelativeLayout>
